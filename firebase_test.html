@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firebase test connecting</title>
+</head>
+
+<body>
+    Hi
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAl7YECh5S4DuxUdTABlvcWXP0nZklNGjE",
+            databaseURL: "https://uws-egat.firebaseio.com",
+        };
+        firebase.initializeApp(config);
+        var ref = firebase.database().ref('data').limitToLast(1);
+        ref.on('child_added', function (snapshot) {
+            snapshot.forEach(function (childSnapshot) {
+                var childKey = childSnapshot.key;
+                var childData = childSnapshot.val();
+                console.log(childKey,'=',childData)
+            });
+        });
+
+    </script>
+</body>
+
+</html>

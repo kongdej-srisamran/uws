@@ -1,0 +1,38 @@
+Firebase 
+--------------
+pudza.egat@gmail.com
+
+
+
+Date: 20/12/2018
+----------------
+line bot
+ - BOT pudza
+   .env
+
+
+Date: 19/12/2018
+----------------
+ - Raspberry pi & arduino communication
+ - add user : uws
+
+Date: 17/12/2018
+-----------------
+1. create gmail account : pudza.egat@gmail.com
+
+2. create firebase project : micro-weather-station
+    - create cloud firestore
+
+3. Make Project :  micro-weather-station
+        1. python: send data to firestore
+            - get serial from arduino
+                - build photo with data
+                - send images with line notify / 1 hour
+                - send data to firestore with timestamp
+
+        2. nodejs: dashboard  
+
+        3. nodejs: line bot
+
+        4. nodejs: line notify
+

@@ -1,0 +1,16 @@
+{
+  "name": "pi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serial_test.js",
+  "dependencies": {
+    "serialport": "^7.1.0",
+    "serialport-js": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
